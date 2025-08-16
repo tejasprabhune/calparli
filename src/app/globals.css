@@ -69,6 +69,7 @@ body {
 
 .stand {
     margin-bottom: 5rem;
+    height: 60vh;
 }
 
 .initial-description {
@@ -83,8 +84,8 @@ body {
 }
 
 .button {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .cta-button {
@@ -100,6 +101,7 @@ body {
 .cta-button:hover {
     cursor: pointer;
 }
+
 
 .nat-description-mask {
     width: 100%;
@@ -126,8 +128,13 @@ body {
 
 .pic {
     margin: auto;
+    width: 30%;
 
     margin-bottom: 5rem;
+}
+
+.vertical {
+    width: 20%;
 }
 
 .description-text {
@@ -154,4 +161,67 @@ body {
 .desc-item {
     text-align: center;
     margin: 3rem;
+}
+
+@media (max-width: 767px) {
+    .title-mask {
+        width: 100%;
+        display: inline-block;
+        overflow: hidden;
+        max-height: 15rem;
+    }
+
+    .title {
+        font-size: 7rem;
+    }
+
+    .stand {
+        margin-bottom: 4rem;
+        height: 75vh;
+    }
+
+    .initial-description {
+        text-align: center;
+        font-size: 1.5rem;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .nat-images {
+        flex-direction: column;
+    }
+
+    .pic {
+        width: 70%;
+    }
+    
+    .vertical {
+        width: 70%;
+    }
+
+    .description-text {
+        font-family: "neue-haas-grotesk-display", sans-serif;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        font-size: 1.5rem;
+    }
+
+    .description-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .desc-item {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    #im2 {
+        margin-top: 2rem;
+    }
 }

@@ -33,9 +33,9 @@ export default function Home() {
             <div className="nat-description-mask">
                 <div className="nat-description text">
                     <div className="nat-images">
-                        <img className="pic" src="/pic3.jpg" width="30%" />
-                        <img className="pic" src="/pic4.jpg" width="30%" />
-                        <img className="pic" src="/pic2.jpg" width="30%" />
+                        <img className="pic" src="/pic3.jpg" />
+                        <img className="pic" src="/pic4.jpg" />
+                        <img className="pic" src="/pic2.jpg" />
                     </div>
                 </div>
             </div>
@@ -58,10 +58,10 @@ export default function Home() {
 
             <div className="nat-description-mask">
                 <div className="nat-description text">
-                    <div className="nat-images">
+                    <div className="nat-images" id="im2">
                         <img className="pic" src="/pic1.jpg" width="30%" />
                         <img className="pic" src="/pic5.jpg" width="30%" />
-                        <img className="pic" src="/pic6.jpg" width="20%" />
+                        <img className="pic vertical" src="/pic6.jpg" />
                     </div>
                 </div>
             </div>

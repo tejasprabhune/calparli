@@ -72,12 +72,30 @@ export default function Title() {
             delay: 2.3,
         })
 
-        gsap.to(".stand", {
-            duration: 1,
-            width: "15%",
-            ease: "power4",
-            delay: 2.0,
-        })
+        let mm = gsap.matchMedia();
+
+        mm.add(
+            "(max-width: 767px)", () => {
+                gsap.to(".stand", {
+                    duration: 1,
+                    height: "40vh",
+                    ease: "power4",
+                    delay: 2.0,
+                })
+            }
+        )
+
+        mm.add(
+            "(min-width: 767px)", () => {
+                gsap.to(".stand", {
+                    duration: 1,
+                    height: "40vh",
+                    ease: "power4",
+                    delay: 2.0,
+                })
+            }
+        )
+
     })
 
 
@@ -89,7 +107,7 @@ export default function Title() {
                 <h1 className="text title">cal parli</h1>
                 <h1 className="text title">cal parli</h1>
             </div>
-            <img className="stand" src="/stand.svg" width="20%" />
+            <img className="stand" src="/stand.svg" />
 
             <i className="title-mask"><p className="text initial-description">the most competitive debate team at UC Berkeley</p></i>
 
