@@ -72,7 +72,7 @@ export default function Title() {
             delay: 2.3,
         })
 
-        let mm = gsap.matchMedia();
+        const mm = gsap.matchMedia();
 
         mm.add(
             "(max-width: 767px)", () => {

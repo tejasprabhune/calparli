@@ -1,5 +1,5 @@
 export const Button = ({ className, contents, href }: { className: string, contents: string, href: string }) => {
-    let cls = `${className} text`;
+    const cls = `${className} text`;
 
 
     return (

@@ -16,7 +16,7 @@ export default function Home() {
         })
 
         for (let i = 1; i < 6; i++) {
-            let delay = gsap.utils.random(1, 2, 0.3);
+            const delay = gsap.utils.random(1, 2, 0.3);
             console.log(delay);
             gsap.from(`.desc-item:nth-child(${i})`, {
                 opacity: 0,
@@ -52,7 +52,7 @@ export default function Home() {
                 <li className="desc-item">Science</li>
             </ul>
             <p className="description-text text">
-                Fly across the United States to compete at tournaments of the highest level. You'll meet the warm, friendly, and inclusive college debate community,
+                Fly across the United States to compete at tournaments of the highest level. You&apos;ll meet the warm, friendly, and inclusive college debate community,
                 learn from the best debate coaches in the nation, and join a team of cracked forensics junkies.
             </p>
 
