@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import Title from "./title";
 import gsap from "gsap";
 import { Button } from "./button";
+import EventTable from "./eventTable";
+import TournamentTable from "./tournaments";
 
 export default function Home() {
 
@@ -63,6 +65,22 @@ export default function Home() {
                         <img className="pic" src="/pic5.jpg" width="30%" />
                         <img className="pic vertical" src="/pic6.jpg" />
                     </div>
+                </div>
+            </div>
+
+            <div>
+                <EventTable />
+            </div>
+
+            <div>
+                <TournamentTable />
+            </div>
+
+            <div>
+                <h1 className="info-sesh-title">Contact</h1>
+                <div className="contact-info">
+                    <p className="text contact-text">Phone: +1 (510) 560-6614</p>
+                    <p className="text contact-text">Instagram: <a href="https://www.instagram.com/calparli/" target="_blank">@calparli</a></p>
                 </div>
             </div>
 

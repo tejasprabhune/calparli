@@ -109,7 +109,7 @@ export default function Title() {
             </div>
             <img className="stand" src="/stand.svg" />
 
-            <i className="title-mask"><p className="text initial-description">the most competitive debate team at UC Berkeley</p></i>
+            <i className="title-mask"><p className="text initial-description">the winningest debate team at UC Berkeley</p></i>
 
             <div className="cta-mask"><Button className="cta-button" contents="APPLY NOW." href="https://forms.gle/idjWJgZ36Q6m44Tu6" /></div>
         </div>

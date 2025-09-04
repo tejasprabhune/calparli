@@ -56,7 +56,7 @@ body {
     opacity: 30%;
 }
 
-.title:nth-child(3) {
+.title:nth-child(3) {flex-basis: 50%;
     height: 15rem;
     top: -10rem;
 }
@@ -223,5 +223,97 @@ body {
 
     #im2 {
         margin-top: 2rem;
+    }
+}
+
+.event-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-sesh-title {
+    position: relative;
+    font-size: 14rem;
+    font-weight: 500;
+    color: var(--black);
+    opacity: 30%;
+
+    text-align: center;
+}
+
+.e-head {
+    font-size: 2rem;
+}
+
+.e-row {
+    font-size: 2rem;
+}
+
+.e-table-wrapper {
+    width: 100%;
+}
+
+.e-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text {
+    font-size: 3rem;
+}
+
+@media (max-width: 767px) {
+    .info-sesh-title {
+        font-size: 5rem;
+    }
+
+    .e-head {
+        font-size: 1rem;
+    }
+
+    .e-row {
+        font-size: 1rem;
+    }
+
+    .contact-info {
+        font-size: 5rem;
+    }
+
+    .contact-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 6rem;
+    }
+
+    .e-table {
+        justify-content: left;
+    }
+
+
+    .info-sesh-title {
+        font-size: 4rem;
+    }
+
+    .e-head {
+        font-size: 0.7rem;
+    }
+
+    .e-row {
+        font-size: 0.7rem;
     }
 }
